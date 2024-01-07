@@ -3,6 +3,7 @@ package jpabook.jpashop.repository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import jpabook.jpashop.domain.Order;
+import jpabook.jpashop.repository.order.query.OrderFlatDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
@@ -84,4 +85,5 @@ public class OrderRepository {
                 .setMaxResults(limit)
                 .getResultList();
     }
+
 }
